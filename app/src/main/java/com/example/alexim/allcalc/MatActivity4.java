@@ -30,7 +30,7 @@ public class MatActivity4 extends AppCompatActivity {
             double p = Double.parseDouble(numberField2.getText().toString());
             double g = Double.parseDouble(numberField3.getText().toString());
             double result = 0,result2 = 0,e,resR;
-            for (double i=0; i<p; i++){
+            for (double i=0; i<=p; i++){
                 result = 1;
                 e = i;
                 while (e>0){
@@ -38,7 +38,7 @@ public class MatActivity4 extends AppCompatActivity {
                     e--;
                 }
             }
-            for (double i=0; i<g; i++){
+            for (double i=0; i<=g; i++){
                 result2 = 1;
                 e = i;
                 while (e > 0){
@@ -54,13 +54,96 @@ public class MatActivity4 extends AppCompatActivity {
             toast.show();
         }
     }
-    public void Del (View v){
-        Button Del = (Button) findViewById(R.id.Del);
+    public void St2(View view) {
+        TextView operationField1 = (TextView) findViewById(R.id.operationField2);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField4);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField5);
+        EditText numberField3 = (EditText) findViewById(R.id.numberField6);
+        if (!numberField1.getText().toString().equals("") && !numberField2.getText().toString().equals("") && !numberField3.getText().toString().equals("")
+                && !numberField1.getText().toString().equals(".") && !numberField2.getText().toString().equals(".") &&
+                !numberField3.getText().toString().equals(".")) {
+            double a = Double.parseDouble(numberField1.getText().toString());
+            double p = Double.parseDouble(numberField2.getText().toString());
+            double g = Double.parseDouble(numberField3.getText().toString());
+            double result = 0,result2 = 0,e,resR;
+            for (double i=0; i<=p; i++){
+                result = 1;
+                e = i;
+                while (e>0){
+                    result*=a;
+                    e--;
+                }
+            }
+            for (double i=0; i<=g; i++){
+                result2 = 1;
+                e = i;
+                while (e > 0){
+                    result2*=a;
+                    e--;
+                }
+            }
+            resR = result / result2;
+            operationField1.setText(Double.toString(resR));
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Введите числа!", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+    }
+    public void St3(View view) {
+        TextView operationField1 = (TextView) findViewById(R.id.operationField3);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField7);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField8);
+        EditText numberField3 = (EditText) findViewById(R.id.numberField9);
+        if (!numberField1.getText().toString().equals("") && !numberField2.getText().toString().equals("") && !numberField3.getText().toString().equals("")
+                && !numberField1.getText().toString().equals(".") && !numberField2.getText().toString().equals(".") &&
+                !numberField3.getText().toString().equals(".")) {
+            double a = Double.parseDouble(numberField1.getText().toString());
+            double p = Double.parseDouble(numberField2.getText().toString());
+            double g = Double.parseDouble(numberField3.getText().toString());
+            double result,e,resR = 0;
+            result = p * g;
+            for (double i=0; i<=result; i++){
+                resR = 1;
+                e = i;
+                while (e>0){
+                    resR*=a;
+                    e--;
+                }
+            }
+            operationField1.setText(Double.toString(resR));
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Введите числа!", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+    }
+    public void Del(View v){
         TextView operationField1 = (TextView) findViewById(R.id.operationField1);
         EditText numberField1 = (EditText) findViewById(R.id.numberField1);
         EditText numberField2 = (EditText) findViewById(R.id.numberField2);
         EditText numberField3 = (EditText) findViewById(R.id.numberField3);
-        operationField1.setText("");
+        operationField1.setText("Ответ:");
+        numberField1.setText("");
+        numberField2.setText("");
+        numberField3.setText("");
+    }
+    public void Del2(View view){
+        TextView operationField1 = (TextView) findViewById(R.id.operationField2);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField4);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField5);
+        EditText numberField3 = (EditText) findViewById(R.id.numberField6);
+        operationField1.setText("Ответ:");
+        numberField1.setText("");
+        numberField2.setText("");
+        numberField3.setText("");
+    }
+    public void Del3(View view){
+        TextView operationField1 = (TextView) findViewById(R.id.operationField3);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField7);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField8);
+        EditText numberField3 = (EditText) findViewById(R.id.numberField9);
+        operationField1.setText("Ответ:");
         numberField1.setText("");
         numberField2.setText("");
         numberField3.setText("");

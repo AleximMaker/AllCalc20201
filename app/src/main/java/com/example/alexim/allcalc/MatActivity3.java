@@ -57,9 +57,9 @@ public class MatActivity3 extends AppCompatActivity {
         EditText numberField7 = (EditText) findViewById(R.id.numberField01);
         EditText numberField8 = (EditText) findViewById(R.id.numberField02);
         EditText numberField9 = (EditText) findViewById(R.id.numberField03);
-        operationField1.setText("");
-        operationField2.setText("");
-        operationField3.setText("");
+        operationField1.setText("D:");
+        operationField2.setText("x1:");
+        operationField3.setText("x2:");
         numberField7.setText("");
         numberField8.setText("");
         numberField9.setText("");

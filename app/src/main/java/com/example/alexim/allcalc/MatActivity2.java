@@ -129,7 +129,7 @@ public class MatActivity2 extends AppCompatActivity {
         TextView operationField1 = (TextView) findViewById(R.id.operationField1);
         EditText numberField1 = (EditText) findViewById(R.id.numberField1);
         EditText numberField2 = (EditText) findViewById(R.id.numberField2);
-        operationField1.setText("");
+        operationField1.setText("Ответ");
         numberField1.setText("");
         numberField2.setText("");
     }
@@ -138,7 +138,7 @@ public class MatActivity2 extends AppCompatActivity {
         TextView operationField2 = (TextView) findViewById(R.id.operationField2);
         EditText numberField3 = (EditText) findViewById(R.id.numberField3);
         EditText numberField4 = (EditText) findViewById(R.id.numberField4);
-        operationField2.setText("");
+        operationField2.setText("Ответ");
         numberField3.setText("");
         numberField4.setText("");
     }
@@ -147,7 +147,7 @@ public class MatActivity2 extends AppCompatActivity {
         TextView operationField3 = (TextView) findViewById(R.id.operationField3);
         EditText numberField5 = (EditText) findViewById(R.id.numberField5);
         EditText numberField6 = (EditText) findViewById(R.id.numberField6);
-        operationField3.setText("");
+        operationField3.setText("Ответ");
         numberField5.setText("");
         numberField6.setText("");
     }
@@ -156,7 +156,7 @@ public class MatActivity2 extends AppCompatActivity {
         TextView operationField4 = (TextView) findViewById(R.id.operationField4);
         EditText numberField7 = (EditText) findViewById(R.id.numberField7);
         EditText numberField8 = (EditText) findViewById(R.id.numberField8);
-        operationField4.setText("");
+        operationField4.setText("Ответ");
         numberField7.setText("");
         numberField8.setText("");
     }
@@ -166,7 +166,7 @@ public class MatActivity2 extends AppCompatActivity {
         TextView operationField4 = (TextView) findViewById(R.id.operationField5);
         EditText numberField7 = (EditText) findViewById(R.id.numberField9);
         EditText numberField8 = (EditText) findViewById(R.id.numberField10);
-        operationField4.setText("");
+        operationField4.setText("Ответ");
         numberField7.setText("");
         numberField8.setText("");
     }
@@ -176,7 +176,7 @@ public class MatActivity2 extends AppCompatActivity {
         TextView operationField4 = (TextView) findViewById(R.id.operationField6);
         EditText numberField7 = (EditText) findViewById(R.id.numberField11);
         EditText numberField8 = (EditText) findViewById(R.id.numberField12);
-        operationField4.setText("");
+        operationField4.setText("Ответ");
         numberField7.setText("");
         numberField8.setText("");
     }
@@ -185,7 +185,7 @@ public class MatActivity2 extends AppCompatActivity {
         TextView operationField4 = (TextView) findViewById(R.id.operationField7);
         EditText numberField7 = (EditText) findViewById(R.id.numberField14);
         EditText numberField8 = (EditText) findViewById(R.id.numberField15);
-        operationField4.setText("");
+        operationField4.setText("Ответ");
         numberField7.setText("");
         numberField8.setText("");
     }
