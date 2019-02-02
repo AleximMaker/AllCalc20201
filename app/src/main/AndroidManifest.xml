@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Two"></activity>
+        <activity android:name=".Two" />
+        <activity android:name=".MatActivity" />
+        <activity android:name=".MatActivity2"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,641 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:scrollbars="none"
+    android:background="#330033"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Формулы сокращенного умножения"
+            android:textColor="#993399"
+            android:textSize="18sp"
+            android:padding="10dp"/>
+</LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Квадрат суммы:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="( a + b )^2 = a^2 + 2*a*b + b^2"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/numberField1"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Введите а"
+            android:inputType="numberSigned|numberDecimal"
+            android:textColorHint="#993399" />
+
+        <EditText
+            android:id="@+id/numberField2"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Введите b"
+            android:inputType="number"
+            android:textColorHint="#993399" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/operationField1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Ответ"
+        android:textColor="#3f3f3f"
+        android:textSize="18sp"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Del"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Del"
+            android:text="C"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Plus"
+            android:text="=" />
+    </LinearLayout>
+</LinearLayout>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Квадрат разности:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="( a - b )^2 = a^2 - 2*a*b + b^2"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/numberField3"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите а"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
+
+                <EditText
+                    android:id="@+id/numberField4"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите b"
+                    android:inputType="number"
+                    android:textColorHint="#993399"  />
+
+
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/operationField2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ответ"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Del2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Del2"
+                    android:text="C" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Minus"
+                    android:text="=" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Разность квадратов:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a^2 - b^2 = ( a + b ) * ( a - b )"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/numberField5"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите а"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
+
+                <EditText
+                    android:id="@+id/numberField6"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите b"
+                    android:inputType="number"
+                    android:textColorHint="#993399"  />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Del3"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="Del3"/>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:onClick="MinusD"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Разность кубов:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a^3 - b^3 = ( a - b ) * ( a^2 + a*b + b^2 )"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/numberField7"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите а"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
+
+                <EditText
+                    android:id="@+id/numberField8"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите b"
+                    android:inputType="number"
+                    android:textColorHint="#993399"  />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Del4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="Del4"/>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:onClick="Minus3"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сумма кубов:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a^3 + b^3 = ( a + b ) * ( a^2 - a*b + b^2 )"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/numberField9"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите а"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399" />
+
+                <EditText
+                    android:id="@+id/numberField10"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите b"
+                    android:inputType="number"
+                    android:textColorHint="#993399" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Del5"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="Del5"/>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:onClick="Plus3"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Куб суммы:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(a + b)^3 = a^3 + 3 * a^2 * b + 3 * a * b^2 + b^3"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/numberField11"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите а"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399" />
+
+                <EditText
+                    android:id="@+id/numberField12"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите b"
+                    android:inputType="number"
+                    android:textColorHint="#993399" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Del6"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="Del6"/>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:onClick="ThreePlus"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Куб разности:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(a - b)^3 = a^3 - 3 * a^2 * b + 3 * a * b^2 - b^3"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/numberField14"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите а"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399" />
+
+                <EditText
+                    android:id="@+id/numberField15"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите b"
+                    android:inputType="number"
+                    android:textColorHint="#993399" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Del7"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="Del7"/>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:onClick="ThreeMinus"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>
