@@ -52,6 +52,22 @@ public class FormDialogFragment extends DialogFragment {
                 startActivity(intent);
             }
         });
+        Button MatA3 = (Button) view.findViewById(R.id.MatA3);
+        MatA3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MatActivity3.class);
+                startActivity(intent);
+            }
+        });
+        Button MatA4 = (Button) view.findViewById(R.id.MatA4);
+        MatA4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MatActivity4.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

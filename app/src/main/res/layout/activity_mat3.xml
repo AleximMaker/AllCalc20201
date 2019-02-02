@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:scrollbars="none"
+    android:background="#330033">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Квадратное уравнение"
+                android:textColor="#993399"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="a * x^2 + b * x + c = 0"
+            android:textColor="#3f3f3f"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <EditText
+                android:id="@+id/numberField01"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Введите а"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColorHint="#993399" />
+
+            <EditText
+                android:id="@+id/numberField02"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Введите b"
+                android:inputType="number"
+                android:textColorHint="#993399" />
+            <EditText
+                android:id="@+id/numberField03"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Введите c"
+                android:inputType="number"
+                android:textColorHint="#993399" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/operationField01"
+                android:layout_width="144dp"
+                android:layout_height="match_parent"
+                android:text="D:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/operationField02"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:text="x1:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/operationField03"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:text="x2:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Del01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Del01"
+                android:text="C" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Kvad"
+                android:text="=" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

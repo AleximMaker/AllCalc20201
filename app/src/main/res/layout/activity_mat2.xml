@@ -4,19 +4,16 @@
     android:layout_height="wrap_content"
     android:padding="7dp"
     android:scrollbars="none"
-    android:background="#330033"
-    >
+    android:background="#330033">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/bg"
-    android:orientation="vertical"
-    >
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,20 +21,15 @@
             android:textColor="#993399"
             android:textSize="18sp"
             android:padding="10dp"/>
-</LinearLayout>
-
+    </LinearLayout>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
+            android:layout_height="wrap_content" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg"
             android:orientation="vertical">
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,7 +37,6 @@
                 android:text="Квадрат суммы:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,7 +44,6 @@
                 android:text="( a + b )^2 = a^2 + 2*a*b + b^2"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,7 +57,6 @@
             android:hint="Введите а"
             android:inputType="numberSigned|numberDecimal"
             android:textColorHint="#993399" />
-
         <EditText
             android:id="@+id/numberField2"
             android:layout_width="195dp"
@@ -76,15 +65,11 @@
             android:hint="Введите b"
             android:inputType="number"
             android:textColorHint="#993399" />
-
-
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp">
-
     </LinearLayout>
 <LinearLayout
     android:layout_width="wrap_content"
@@ -100,16 +85,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <Button
             android:id="@+id/Del"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="Del"
-            android:text="C"
-            />
-
+            android:text="C" />
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -133,7 +115,6 @@
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -141,12 +122,10 @@
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
-
                 <EditText
                     android:id="@+id/numberField3"
                     android:layout_width="177dp"
@@ -155,7 +134,6 @@
                     android:hint="Введите а"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399"  />
-
                 <EditText
                     android:id="@+id/numberField4"
                     android:layout_width="195dp"
@@ -164,8 +142,6 @@
                     android:hint="Введите b"
                     android:inputType="number"
                     android:textColorHint="#993399"  />
-
-
             </LinearLayout>
             <LinearLayout
             android:layout_width="wrap_content"
@@ -178,15 +154,8 @@
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"/>
         </LinearLayout>
-
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-
-            </LinearLayout>
-
-            <LinearLayout
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -221,7 +190,6 @@
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -229,12 +197,10 @@
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
-
                 <EditText
                     android:id="@+id/numberField5"
                     android:layout_width="177dp"
@@ -243,7 +209,6 @@
                     android:hint="Введите а"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399"  />
-
                 <EditText
                     android:id="@+id/numberField6"
                     android:layout_width="195dp"
@@ -252,8 +217,6 @@
                     android:hint="Введите b"
                     android:inputType="number"
                     android:textColorHint="#993399"  />
-
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -266,14 +229,6 @@
                     android:textColor="#3f3f3f"
                     android:textSize="18sp"/>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-
-            </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -308,7 +263,6 @@
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -316,12 +270,10 @@
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
-
                 <EditText
                     android:id="@+id/numberField7"
                     android:layout_width="177dp"
@@ -330,7 +282,6 @@
                     android:hint="Введите а"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399"  />
-
                 <EditText
                     android:id="@+id/numberField8"
                     android:layout_width="195dp"
@@ -339,8 +290,6 @@
                     android:hint="Введите b"
                     android:inputType="number"
                     android:textColorHint="#993399"  />
-
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -355,15 +304,7 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <Button
                     android:id="@+id/Del4"
                     android:layout_weight="1"
@@ -394,7 +335,6 @@
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -402,12 +342,10 @@
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
-
                 <EditText
                     android:id="@+id/numberField9"
                     android:layout_width="177dp"
@@ -416,7 +354,6 @@
                     android:hint="Введите а"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
-
                 <EditText
                     android:id="@+id/numberField10"
                     android:layout_width="195dp"
@@ -425,8 +362,6 @@
                     android:hint="Введите b"
                     android:inputType="number"
                     android:textColorHint="#993399" />
-
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -439,13 +374,6 @@
                     android:textColor="#3f3f3f"
                     android:textSize="18sp"/>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-
-            </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -480,7 +408,6 @@
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -488,12 +415,10 @@
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
-
                 <EditText
                     android:id="@+id/numberField11"
                     android:layout_width="177dp"
@@ -502,7 +427,6 @@
                     android:hint="Введите а"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
-
                 <EditText
                     android:id="@+id/numberField12"
                     android:layout_width="195dp"
@@ -511,8 +435,6 @@
                     android:hint="Введите b"
                     android:inputType="number"
                     android:textColorHint="#993399" />
-
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -525,13 +447,6 @@
                     android:textColor="#3f3f3f"
                     android:textSize="18sp"/>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-
-            </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -566,7 +481,6 @@
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -574,7 +488,6 @@
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -588,7 +501,6 @@
                     android:hint="Введите а"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
-
                 <EditText
                     android:id="@+id/numberField15"
                     android:layout_width="195dp"
@@ -597,8 +509,6 @@
                     android:hint="Введите b"
                     android:inputType="number"
                     android:textColorHint="#993399" />
-
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -611,14 +521,7 @@
                     android:textColor="#3f3f3f"
                     android:textSize="18sp"/>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-
-            </LinearLayout>
-
-            <LinearLayout
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
