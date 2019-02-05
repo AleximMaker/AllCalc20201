@@ -18,6 +18,30 @@ public class MatActivity4 extends AppCompatActivity {
         setContentView(R.layout.activity_mat4);
 
     }
+    public void St01(View v){
+        TextView operationField1 = (TextView) findViewById(R.id.operationField04);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField01);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField02);
+        if (!numberField1.getText().toString().equals("") && !numberField2.getText().toString().equals("")
+                && !numberField1.getText().toString().equals(".") && !numberField2.getText().toString().equals(".")) {
+            double a = Double.parseDouble(numberField1.getText().toString());
+            double p = Double.parseDouble(numberField2.getText().toString());
+            double result = 0,e;
+            for (double i=0; i<=p; i++){
+                result = 1;
+                e = i;
+                while (e>0){
+                    result*=a;
+                    e--;
+                }
+            }
+            operationField1.setText(Double.toString(result));
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Введите числа!", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+    }
 
     public void Minus(View view) {
         TextView operationField1 = (TextView) findViewById(R.id.operationField1);
@@ -224,6 +248,15 @@ public class MatActivity4 extends AppCompatActivity {
         numberField1.setText("");
         numberField2.setText("");
         numberField3.setText("");
+    }
+    public void Del06(View view){
+        TextView operationField1 = (TextView) findViewById(R.id.operationField04);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField01);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField02);
+        operationField1.setText("Ответ:");
+        numberField1.setText("");
+        numberField2.setText("");
+
     }
 }
 

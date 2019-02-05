@@ -20,6 +20,7 @@ public class DataAdapter extends ArrayAdapter<String> {
         this.mContext = context;
     }
 
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // TODO Auto-generated method stub
@@ -33,6 +34,7 @@ public class DataAdapter extends ArrayAdapter<String> {
         label.setText(mContacts[position]);
         return (convertView);
     }
+
 
     // возвращает содержимое выделенного элемента списка
     public String getItem(int position) {
