@@ -18,22 +18,23 @@ public class FisActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fis);
         R1 = findViewById(R.id.R1);
         tV = findViewById(R.id.textView);
-       // String textFromTextViewToSave=savedInstanceState.getString("str1");
-       // tV.setText(textFromTextViewToSave);
+        if (savedInstanceState != null){String textFromTextViewToSave=savedInstanceState.getString("str1");
+        tV.setText(textFromTextViewToSave);}
     }
-   // @Override
-   // public void onSaveInstanceState(Bundle state) {
+    @Override
+    public void onSaveInstanceState(Bundle state) {
         //находим TextView
-      //  super.onSaveInstanceState(state);
-       // TextView tV = (TextView) this.findViewById(R.id.textView);
-        //String textFromTextViewToSave = (String) tV.getText();
-        //state.putString("str1", textFromTextViewToSave);
-   // }
+        super.onSaveInstanceState(state);
+        TextView tV = (TextView) this.findViewById(R.id.textView);
+        String textFromTextViewToSave = (String) tV.getText();
+        state.putString("str1", textFromTextViewToSave);
+    }
     public void OnClick(View v){
         R1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tV.setText("Я насчитал " + ++mCount + " ворон");
+                tV.setText("Я насчитал " + ++mCount + " использований равно");
+
             }
         });
     }

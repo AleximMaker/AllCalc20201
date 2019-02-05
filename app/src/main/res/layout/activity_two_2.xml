@@ -17,23 +17,6 @@
             android:layout_height="wrap_content"
             android:onClick="OnClick"
             android:text="Простые математические формулы" />
-        <Button
-            android:id="@+id/MatA2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:text="Формулы сокращеннго умножения" />
-        <Button
-            android:id="@+id/MatA3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:text="Квадратное уравнение" />
-        <Button
-            android:id="@+id/MatA4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:text="Свойства степеней и корней" />
+
     </LinearLayout>
 </ScrollView>
