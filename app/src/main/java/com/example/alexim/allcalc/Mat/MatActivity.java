@@ -1,4 +1,4 @@
-package com.example.alexim.allcalc;
+package com.example.alexim.allcalc.Mat;
 ;
 
 import android.support.v7.app.AppCompatActivity;

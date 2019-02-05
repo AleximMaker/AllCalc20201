@@ -1,15 +1,15 @@
 package com.example.alexim.allcalc;
 
-import android.content.Intent;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
+
+import com.example.alexim.allcalc.DialogFragment.FormDialogFragment;
+import com.example.alexim.allcalc.DialogFragment.Form2DialogFragment;
 
 
 public class MainActivity extends AppCompatActivity implements
@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity implements
                         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                         FormDialogFragment fragment = FormDialogFragment.newInstance();
                         fragment.show(ft, "form_dialog");
+                        break;
+                    case 1:
+                        FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();
+                        Form2DialogFragment fragment2 = Form2DialogFragment.newInstance();
+                        fragment2.show(ft2, "form_dialog");
                         break;
 
                 }

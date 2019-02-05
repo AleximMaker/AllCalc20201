@@ -1,4 +1,4 @@
-package com.example.alexim.allcalc;
+package com.example.alexim.allcalc.DialogFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.example.alexim.allcalc.Mat.MatActivity;
+import com.example.alexim.allcalc.Mat.MatActivity2;
+import com.example.alexim.allcalc.Mat.MatActivity3;
+import com.example.alexim.allcalc.Mat.MatActivity4;
+import com.example.alexim.allcalc.R;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;

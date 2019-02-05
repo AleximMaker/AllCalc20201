@@ -7,9 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 public class DataAdapter extends ArrayAdapter<String> {
-    private static final String[] mContacts = { "Математические формулы", "Физические формулы", "Химические формулы",
-            "Экономические формулы", "-", "-", "-", "-", "-",
-            "-", "-", "-", "-", "-" };
+    private static final String[] mContacts = { "Математические формулы", "Физические формулы" };
 
     Context mContext;
 

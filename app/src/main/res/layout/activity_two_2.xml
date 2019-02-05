@@ -11,12 +11,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/MatA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClick"
-        android:text="Простые математические формулы" />
+        <Button
+            android:id="@+id/Fis1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnClick"
+            android:text="Простые математические формулы" />
         <Button
             android:id="@+id/MatA2"
             android:layout_width="match_parent"
