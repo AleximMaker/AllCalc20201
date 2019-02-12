@@ -16,6 +16,7 @@ import com.example.alexim.allcalc.Mat.MatActivity2;
 import com.example.alexim.allcalc.Mat.MatActivity3;
 import com.example.alexim.allcalc.Mat.MatActivity4;
 import com.example.alexim.allcalc.R;
+import com.example.alexim.allcalc.TwoMenu;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
@@ -71,6 +72,14 @@ public class FormDialogFragment extends DialogFragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), MatActivity4.class);
+                startActivity(intent);
+            }
+        });
+        Button Mat5 = (Button) view.findViewById(R.id.Mat5);
+        Mat5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), TwoMenu.class);
                 startActivity(intent);
             }
         });

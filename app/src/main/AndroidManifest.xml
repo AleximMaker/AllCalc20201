@@ -22,6 +22,8 @@
         <activity android:name=".Mat.MatActivity3" />
         <activity android:name=".Mat.MatActivity4" />
         <activity android:name=".FisActivity" />
+        <activity android:name=".TwoMenu"
+            android:theme="@style/CustomTheme"></activity>
     </application>
 
 </manifest>
