@@ -91,7 +91,7 @@
                     android:layout_weight="1"
                     android:onClick="Del06"
                     android:text="C"
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
 
                 <TextView
                     android:layout_width="12dp"
@@ -103,7 +103,7 @@
                     android:layout_weight="1"
                     android:onClick="St01"
                     android:text="="
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -183,7 +183,7 @@
                     android:layout_weight="1"
                     android:onClick="Del"
                     android:text="C"
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
                 <TextView
                     android:layout_width="12dp"
                     android:layout_height="wrap_content" />
@@ -195,7 +195,7 @@
                     android:layout_weight="1"
                     android:onClick="Minus"
                     android:text="="
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -274,7 +274,7 @@
                     android:layout_weight="1"
                     android:onClick="Del2"
                     android:text="C"
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
                 <TextView
                     android:layout_width="12dp"
                     android:layout_height="wrap_content" />
@@ -285,7 +285,7 @@
                     android:layout_weight="1"
                     android:onClick="St2"
                     android:text="="
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -364,7 +364,7 @@
                     android:layout_weight="1"
                     android:onClick="Del3"
                     android:text="C"
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
                 <TextView
                     android:layout_width="12dp"
                     android:layout_height="wrap_content" />
@@ -375,7 +375,7 @@
                     android:layout_weight="1"
                     android:onClick="St3"
                     android:text="="
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -454,7 +454,7 @@
                     android:layout_weight="1"
                     android:onClick="Del3"
                     android:text="C"
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
                 <TextView
                     android:layout_width="12dp"
                     android:layout_height="wrap_content" />
@@ -465,7 +465,7 @@
                     android:layout_weight="1"
                     android:onClick="St4"
                     android:text="="
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -544,7 +544,7 @@
                     android:layout_weight="1"
                     android:onClick="Del5"
                     android:text="C"
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
                 <TextView
                     android:layout_width="12dp"
                     android:layout_height="wrap_content" />
@@ -555,7 +555,7 @@
                     android:layout_weight="1"
                     android:onClick="St5"
                     android:text="="
-                    android:textColor="#fff"/>
+                    android:textColor="#663366"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

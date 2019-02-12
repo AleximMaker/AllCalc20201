@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mSelectText = (TextView) findViewById(R.id.info);
         final GridView g = (GridView) findViewById(R.id.gridView1);
         mAdapter = new DataAdapter(getApplicationContext(),
