@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#3f3f3f">
+    android:background="@drawable/gradient">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

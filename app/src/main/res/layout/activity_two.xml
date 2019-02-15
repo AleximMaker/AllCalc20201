@@ -30,11 +30,6 @@
             android:onClick="onClick"
             android:text="Квадратное уравнение" />
 
-        <Button
-            android:id="@+id/Mat5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
 
         <Button
             android:id="@+id/MatA4"
