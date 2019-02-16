@@ -84,20 +84,23 @@
 </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
         <Button
             android:id="@+id/Del"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="Del"
-            android:text="C" />
+            android:text="C"
+            android:textColor="#000"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="Plus"
-            android:text="=" />
+            android:text="="
+            android:textColor="#000"/>
     </LinearLayout>
 </LinearLayout>
         <TextView
@@ -157,7 +160,8 @@
             <LinearLayout
                 android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/Del2"
@@ -165,14 +169,16 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="Del2"
-                    android:text="C" />
+                    android:text="C"
+                    android:textColor="#000"/>
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="Minus"
-                    android:text="=" />
+                    android:text="="
+                    android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -231,7 +237,8 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/Del3"
@@ -239,13 +246,15 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="C"
-                    android:onClick="Del3"/>
+                    android:onClick="Del3"
+                    android:textColor="#000"/>
                 <Button
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="MinusD"/>
+                    android:onClick="MinusD"
+                    android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -304,20 +313,23 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="5dp">
                 <Button
                     android:id="@+id/Del4"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="C"
-                    android:onClick="Del4"/>
+                    android:onClick="Del4"
+                    android:textColor="#000"/>
                 <Button
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="Minus3"/>
+                    android:onClick="Minus3"
+                    android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -376,7 +388,8 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/Del5"
@@ -384,13 +397,15 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="C"
-                    android:onClick="Del5"/>
+                    android:onClick="Del5"
+                    android:textColor="#000"/>
                 <Button
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="Plus3"/>
+                    android:onClick="Plus3"
+                    android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -449,7 +464,8 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/Del6"
@@ -457,13 +473,15 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="C"
-                    android:onClick="Del6"/>
+                    android:onClick="Del6"
+                    android:textColor="#000"/>
                 <Button
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="ThreePlus"/>
+                    android:onClick="ThreePlus"
+                    android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -523,7 +541,8 @@
             </LinearLayout>
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+            android:padding="5dp">
 
                 <Button
                     android:id="@+id/Del7"
@@ -531,13 +550,15 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="C"
-                    android:onClick="Del7"/>
+                    android:onClick="Del7"
+                    android:textColor="#000"/>
                 <Button
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="ThreeMinus"/>
+                    android:onClick="ThreeMinus"
+                    android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
 </LinearLayout>

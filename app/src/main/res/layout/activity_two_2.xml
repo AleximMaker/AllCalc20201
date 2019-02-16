@@ -16,7 +16,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="OnClick"
-            android:text="Простые математические формулы" />
+            android:text="Кинематика" />
+        <Button
+            android:id="@+id/Fis2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnClick"
+            android:text="Динамика" />
 
     </LinearLayout>
 </ScrollView>

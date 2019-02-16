@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.alexim.allcalc.Fis2;
 import com.example.alexim.allcalc.FisActivity;
 
 import com.example.alexim.allcalc.R;
@@ -47,8 +48,15 @@ public class Form2DialogFragment extends DialogFragment {
                 Intent intent = new Intent(getActivity(), FisActivity.class);
                 startActivity(intent);
             }
+    });
+        Button Fis2_2 = (Button) view.findViewById(R.id.Fis2_2);
+        Fis2_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Fis2.class);
+                startActivity(intent);
+            }
         });
-
     }
 
     @Override

@@ -10,22 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Mat.MatActivity" />
         <activity android:name=".Mat.MatActivity2" />
         <activity android:name=".Mat.MatActivity3" />
         <activity android:name=".Mat.MatActivity4" />
         <activity android:name=".FisActivity" />
-        <activity android:name=".TwoMenu"
-            >
+        <activity android:name=".TwoMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".Fis2"></activity>
     </application>
 
 </manifest>
