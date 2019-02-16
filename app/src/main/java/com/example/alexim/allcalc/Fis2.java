@@ -7,6 +7,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static java.lang.Math.sqrt;
+
 public class Fis2 extends AppCompatActivity {
 
     @Override
@@ -72,6 +74,54 @@ public class Fis2 extends AppCompatActivity {
             toast.show();
         }
     }
+    public void F4_2(View v){
+        TextView operationField1 = (TextView) findViewById(R.id.operationField4_1f);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField4_1f);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField4_2f);
+        EditText numberField3 = (EditText) findViewById(R.id.numberField5_2f);
+        EditText numberField4 = (EditText) findViewById(R.id.numberField6_2f);
+        if (!numberField1.getText().toString().equals("") && !numberField2.getText().toString().equals("")
+                && !numberField1.getText().toString().equals(".") && !numberField2.getText().toString().equals(".")
+                && !numberField3.getText().toString().equals("")&& !numberField4.getText().toString().equals("")
+                && !numberField3.getText().toString().equals(".")&& !numberField4.getText().toString().equals(".")) {
+            double G = Double.parseDouble(numberField1.getText().toString());
+            double M = Double.parseDouble(numberField2.getText().toString());
+            double m = Double.parseDouble(numberField3.getText().toString());
+            double r = Double.parseDouble(numberField4.getText().toString());
+            double result = 0,RESr = 0,e,Mm,Del;
+            for (double i=0; i<=2; i++){
+                RESr = 1;
+                e = i;
+                while (e>0){
+                    RESr*=r;
+                    e--;
+                }
+            }
+            result = G * ((M*m)/RESr);
+            operationField1.setText(Double.toString(result));
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Введите числа!", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+    }
+    public void F6_1(View v){
+        TextView operationField1 = (TextView) findViewById(R.id.operationField6_1f);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField7_1f);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField8_2f);
+        if (!numberField1.getText().toString().equals("") && !numberField2.getText().toString().equals("")
+                && !numberField1.getText().toString().equals(".") && !numberField2.getText().toString().equals(".")) {
+            double g = Double.parseDouble(numberField1.getText().toString());
+            double r = Double.parseDouble(numberField2.getText().toString());
+            double result = 0;
+            result = sqrt(g * r);
+            operationField1.setText(Double.toString(result));
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Введите числа!", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+    }
     public void Del2_1f(View view){
         TextView operationField1 = (TextView) findViewById(R.id.operationField1_1f);
         EditText numberField1 = (EditText) findViewById(R.id.numberField1_1f);
@@ -95,5 +145,26 @@ public class Fis2 extends AppCompatActivity {
         operationField1.setText("Ответ:");
         numberField1.setText("");
         numberField2.setText("");
+    }
+    public void Del4_2f(View view){
+        TextView operationField1 = (TextView) findViewById(R.id.operationField4_1f);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField4_1f);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField4_2f);
+        EditText numberField3 = (EditText) findViewById(R.id.numberField5_2f);
+        EditText numberField4 = (EditText) findViewById(R.id.numberField6_2f);
+        operationField1.setText("Ответ:");
+        numberField1.setText("");
+        numberField2.setText("");
+        numberField3.setText("");
+        numberField4.setText("");
+    }
+    public void Del6_1f(View view){
+        TextView operationField1 = (TextView) findViewById(R.id.operationField6_1f);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField7_1f);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField8_2f);
+        operationField1.setText("Ответ:");
+        numberField1.setText("");
+        numberField2.setText("");
+
     }
 }

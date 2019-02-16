@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Динамика"
+                android:text="Работа, мощность, энергия"
                 android:textColor="#993399"
                 android:textSize="18sp"
                 android:padding="10dp"/>
@@ -35,14 +35,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Второй закон Ньютона"
+                android:text="Механическая работа"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="F = m * a"
+                android:text="A = F * S * cos*a"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <LinearLayout
@@ -55,12 +55,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите m"
+                    android:hint="Введите F"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
 
                 <EditText
                     android:id="@+id/numberField1_2f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите S"
+                    android:inputType="number"
+                    android:textColorHint="#993399" />
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+                <EditText
+                    android:id="@+id/numberField1_3f"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -92,11 +105,10 @@
                 android:padding="5dp">
 
                 <Button
-                    android:id="@+id/Del06"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="Del2_1f"
+                    android:onClick="Del1_1f"
                     android:text="C"
                     android:textColor="#663366"/>
 
@@ -124,14 +136,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Сила упругости"
+                android:text="Общая формула для мощности"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="F упр. = k * x"
+                android:text="P = A / t"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <LinearLayout
@@ -144,7 +156,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите k"
+                    android:hint="Введите A"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
 
@@ -153,7 +165,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите x"
+                    android:hint="Введите t"
                     android:inputType="number"
                     android:textColorHint="#993399" />
 
@@ -184,7 +196,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="Del2_2f"
+                    android:onClick="Del2_1f"
                     android:text="C"
                     android:textColor="#663366"/>
 
@@ -195,7 +207,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="F2_2"
+                    android:onClick="F3_1"
                     android:text="="
                     android:textColor="#663366"/>
             </LinearLayout>
@@ -212,14 +224,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Общий коэффициент жесткости параллельно соединённых пружин:"
+                android:text="Коэффициент полезного действия"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="K = K1 + K2 + ... Kx"
+                android:text="n = Aпол / Aзатр или n = Pпол / Pзатр"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <LinearLayout
@@ -232,7 +244,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите k"
+                    android:hint="Введите А или Р"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
 
@@ -241,10 +253,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите x"
+                    android:hint="Введите А или Р"
                     android:inputType="number"
                     android:textColorHint="#993399" />
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -269,10 +280,11 @@
                 android:padding="5dp">
 
                 <Button
+                    android:id="@+id/Del3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="Del3_2f"
+                    android:onClick="Del3_1f"
                     android:text="C"
                     android:textColor="#663366"/>
 
@@ -283,14 +295,11 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="F3_2"
+                    android:onClick="F4_1"
                     android:text="="
                     android:textColor="#663366"/>
             </LinearLayout>
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -300,14 +309,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Закон всемирного тяготения:"
+                android:text="Формула для кинетической энергии:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="F = G * (( M * m) / r^2"
+                android:text="E = ( m * v^2 ) / 2"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <LinearLayout
@@ -320,37 +329,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите G"
+                    android:hint="Введите m"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
 
                 <EditText
-                android:id="@+id/numberField4_2f"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Введите M"
-                android:inputType="number"
-                android:textColorHint="#993399" />
+                    android:id="@+id/numberField4_2f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите v"
+                    android:inputType="number"
+                    android:textColorHint="#993399" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
                 <EditText
-                    android:id="@+id/numberField5_2f"
+                    android:id="@+id/numberField4_3f"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Введите m"
-                    android:inputType="number"
-                    android:textColorHint="#993399" />
-                <EditText
-                    android:id="@+id/numberField6_2f"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Введите r"
                     android:inputType="number"
                     android:textColorHint="#993399" />
 
@@ -381,7 +382,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="Del4_2f"
+                    android:onClick="Del1_1f"
                     android:text="C"
                     android:textColor="#663366"/>
 
@@ -392,7 +393,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="F4_2"
+                    android:onClick="F2_1"
                     android:text="="
                     android:textColor="#663366"/>
             </LinearLayout>
@@ -400,90 +401,5 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Первая космическая скорость:"
-                android:textColor="#3f3f3f"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="V = √(g * Rn)"
-                android:textColor="#3f3f3f"
-                android:textSize="18sp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ffffff">
-
-                <EditText
-                    android:id="@+id/numberField7_1f"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Введите g"
-                    android:inputType="numberSigned|numberDecimal"
-                    android:textColorHint="#993399" />
-
-                <EditText
-                    android:id="@+id/numberField8_2f"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Введите Rn"
-                    android:inputType="number"
-                    android:textColorHint="#993399" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/operationField6_1f"
-                    android:layout_width="144dp"
-                    android:layout_height="match_parent"
-                    android:text="Ответ:"
-                    android:textColor="#3f3f3f"
-                    android:textSize="18sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="Del6_1f"
-                    android:text="C"
-                    android:textColor="#663366"/>
-
-                <TextView
-                    android:layout_width="12dp"
-                    android:layout_height="wrap_content" />
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="F6_1"
-                    android:text="="
-                    android:textColor="#663366"/>
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>

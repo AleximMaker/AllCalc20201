@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Mat.MatActivity" />
         <activity android:name=".Mat.MatActivity2" />
         <activity android:name=".Mat.MatActivity3" />
@@ -23,7 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Fis2"></activity>
+        <activity android:name=".Fis2" />
+        <activity android:name=".Fis3"></activity>
     </application>
 
 </manifest>
