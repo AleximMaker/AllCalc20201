@@ -13,17 +13,16 @@ import android.widget.Button;
 
 import com.example.alexim.allcalc.Fis.Fis2;
 import com.example.alexim.allcalc.Fis.Fis3;
-import com.example.alexim.allcalc.Fis.FisActivity;
-
+import com.example.alexim.allcalc.Geo.GeoActivity;
 import com.example.alexim.allcalc.R;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
-public class Form2DialogFragment extends DialogFragment {
+public class Form4DialogFragment extends DialogFragment {
 
-    public static Form2DialogFragment newInstance(){
-        return new Form2DialogFragment();
+    public static Form4DialogFragment newInstance(){
+        return new Form4DialogFragment();
     }
 
     @Override
@@ -36,21 +35,21 @@ public class Form2DialogFragment extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_two_2,container,false);
+        return inflater.inflate(R.layout.activity_two_3,container,false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button Fis1 = (Button) view.findViewById(R.id.Fis1);
-        Fis1.setOnClickListener(new View.OnClickListener() {
+        Button Geo1 = (Button) view.findViewById(R.id.Geo1);
+        Geo1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FisActivity.class);
+                Intent intent = new Intent(getActivity(), GeoActivity.class);
                 startActivity(intent);
             }
-    });
-        Button Fis2_2 = (Button) view.findViewById(R.id.Fis2_2);
+        });
+        Button Fis2_2 = (Button) view.findViewById(R.id.Geo2);
         Fis2_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +57,7 @@ public class Form2DialogFragment extends DialogFragment {
                 startActivity(intent);
             }
         });
-        Button Fis3_2 = (Button) view.findViewById(R.id.Fis3_2);
+        Button Fis3_2 = (Button) view.findViewById(R.id.Geo3);
         Fis3_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,4 +76,3 @@ public class Form2DialogFragment extends DialogFragment {
         }
     }
 }
-

@@ -10,14 +10,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import com.example.alexim.allcalc.DialogFragment.Form2DialogFragment;
+import com.example.alexim.allcalc.DialogFragment.Form4DialogFragment;
 import com.example.alexim.allcalc.DialogFragment.FormDialogFragment;
 import com.example.alexim.allcalc.Mat.MatActivity;
 import com.example.alexim.allcalc.Mat.MatActivity2;
 
 public class TwoMenu extends AppCompatActivity {
-    String[] Names = {"Математика", "Физика"};
+    String[] Names = {"Математика", "Физика","Геометрия"};
     Intent intent;
 
     @Override
@@ -40,7 +40,13 @@ public class TwoMenu extends AppCompatActivity {
                     case 1:
                         FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();
                         Form2DialogFragment fragment2 = Form2DialogFragment.newInstance();
-                        fragment2.show(ft2, "form_dialog");                        break;
+                        fragment2.show(ft2, "form_dialog");
+                        break;
+                    case 2:
+                        FragmentTransaction ft4 = getSupportFragmentManager().beginTransaction();
+                        Form4DialogFragment fragment4 = Form4DialogFragment.newInstance();
+                        fragment4.show(ft4, "form_dialog");
+                        break;
                 }
 
 

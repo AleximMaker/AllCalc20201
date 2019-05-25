@@ -19,6 +19,7 @@ public class MatActivity extends AppCompatActivity {
     Double operand = null;// операнд операции
     String lastOperation = "="; // последняя операция
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import com.example.alexim.allcalc.Mat.MatActivity;
 import com.example.alexim.allcalc.Mat.MatActivity2;
 import com.example.alexim.allcalc.Mat.MatActivity3;
@@ -43,7 +42,7 @@ public class FormDialogFragment extends DialogFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-         Button MatA = (Button) view.findViewById(R.id.MatA);
+        Button MatA = (Button) view.findViewById(R.id.MatA);
         MatA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,6 +76,24 @@ public class FormDialogFragment extends DialogFragment {
         });
 
 
+    }
+    @Nullable
+
+    public View onCreateView2(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_fis,container,false);
+    }
+
+
+    public void onViewCreated2(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Button MatA = (Button) view.findViewById(R.id.MatA);
+        MatA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MatActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

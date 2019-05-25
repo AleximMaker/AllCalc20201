@@ -15,7 +15,8 @@
         <activity android:name=".Mat.MatActivity2" />
         <activity android:name=".Mat.MatActivity3" />
         <activity android:name=".Mat.MatActivity4" />
-        <activity android:name=".FisActivity" />
+        <activity android:name=".Fis.FisActivity" />
+        <activity android:name=".Geo.GeoActivity" />
         <activity android:name=".TwoMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,8 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Fis2" />
-        <activity android:name=".Fis3"></activity>
+        <activity android:name=".Fis.Fis2" />
+        <activity android:name=".Fis.Fis3" />
+        <activity android:name=".Point_mat_two"></activity>
     </application>
 
 </manifest>

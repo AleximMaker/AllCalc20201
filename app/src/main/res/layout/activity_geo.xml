@@ -11,44 +11,19 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg"
-        android:orientation="vertical">
-
-        <ListView
-            android:id="@+id/ListView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="top|left"
-            android:inputType="textMultiLine" />
-
-        <Button
-            android:id="@+id/action_save"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/action_open"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Формулы сокращенного умножения"
-            android:textColor="#993399"
-            android:textSize="18sp"
-            android:padding="10dp"/>
-    </LinearLayout>
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Формулы расчета площади"
+                android:textColor="#993399"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -61,78 +36,71 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Квадрат суммы:"
+                android:text="Площадь квадрата по стороне:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="( a + b )^2 = a^2 + 2*a*b + b^2"
+                android:text="S = a^2"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
 
-        <EditText
-            android:id="@+id/numberField1"
-            android:layout_width="177dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Введите а"
-            android:inputType="numberSigned|numberDecimal"
-            android:textColorHint="#993399" />
-        <EditText
-            android:id="@+id/numberField2"
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Введите b"
-            android:inputType="number"
-            android:textColorHint="#993399" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
-    </LinearLayout>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/operationField1"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Ответ"
-        android:textColor="#3f3f3f"
-        android:textSize="18sp"/>
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp">
-        <Button
-            android:id="@+id/Del"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="Del"
-            android:text="C"
-            android:textColor="#000"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="Plus"
-            android:text="="
-            android:textColor="#000"/>
-    </LinearLayout>
-</LinearLayout>
+                <EditText
+                    android:id="@+id/numberField_geo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите а"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField_geo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <Button
+                    android:id="@+id/Del_geo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Del"
+                    android:text="C"
+                    android:textColor="#000"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="KVS"
+                    android:text="="
+                    android:textColor="#000"/>
+            </LinearLayout>
+        </LinearLayout>
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -141,14 +109,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Квадрат разности:"
+                android:text="Площадь квадрата по диагонали:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="( a - b )^2 = a^2 - 2*a*b + b^2"
+                android:text="S = d^2 / 2"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
@@ -157,33 +125,25 @@
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
                 <EditText
-                    android:id="@+id/numberField3"
-                    android:layout_width="177dp"
+                    android:id="@+id/numberField_geo2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите а"
+                    android:hint="Введите d"
                     android:inputType="numberSigned|numberDecimal"
-                    android:textColorHint="#993399"  />
-                <EditText
-                    android:id="@+id/numberField4"
-                    android:layout_width="195dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Введите b"
-                    android:inputType="number"
                     android:textColorHint="#993399"  />
             </LinearLayout>
             <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-            <TextView
-                android:id="@+id/operationField2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Ответ"
-                android:textColor="#3f3f3f"
-                android:textSize="18sp"/>
-        </LinearLayout>
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField_geo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
@@ -203,7 +163,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="Minus"
+                    android:onClick="KVD"
                     android:text="="
                     android:textColor="#000"/>
             </LinearLayout>
@@ -219,14 +179,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Разность квадратов:"
+                android:text="Площадь прямоугольника:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="a^2 - b^2 = ( a + b ) * ( a - b )"
+                android:text="S = a * b"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
@@ -235,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
                 <EditText
-                    android:id="@+id/numberField5"
+                    android:id="@+id/numberField_geo3"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -243,7 +203,7 @@
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399"  />
                 <EditText
-                    android:id="@+id/numberField6"
+                    android:id="@+id/numberField_geo3_2"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -255,7 +215,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/operationField3"
+                    android:id="@+id/operationField_geo3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Ответ"
@@ -280,7 +240,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="MinusD"
+                    android:onClick="PR"
                     android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
@@ -295,14 +255,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Разность кубов:"
+                android:text="Площадь треугольника:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="a^3 - b^3 = ( a - b ) * ( a^2 + a*b + b^2 )"
+                android:text="S = ( a * b * c ) / 4 * R"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
@@ -311,7 +271,7 @@
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
                 <EditText
-                    android:id="@+id/numberField7"
+                    android:id="@+id/numberField_geo4"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -319,7 +279,7 @@
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399"  />
                 <EditText
-                    android:id="@+id/numberField8"
+                    android:id="@+id/numberField_geo4_2"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -328,10 +288,31 @@
                     android:textColorHint="#993399"  />
             </LinearLayout>
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+                <EditText
+                    android:id="@+id/numberField_geo4_3"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите c"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
+                <EditText
+                    android:id="@+id/numberField_geo4_4"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите R"
+                    android:inputType="number"
+                    android:textColorHint="#993399"  />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/operationField4"
+                    android:id="@+id/operationField_geo4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Ответ"
@@ -355,7 +336,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="Minus3"
+                    android:onClick="TR"
                     android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
@@ -370,14 +351,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Сумма кубов:"
+                android:text="Площадь параллелограмма:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="a^3 + b^3 = ( a + b ) * ( a^2 - a*b + b^2 )"
+                android:text="S = a * h"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
@@ -386,7 +367,7 @@
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
                 <EditText
-                    android:id="@+id/numberField9"
+                    android:id="@+id/numberField_geo5"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -394,11 +375,11 @@
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
                 <EditText
-                    android:id="@+id/numberField10"
+                    android:id="@+id/numberField_geo5_1"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите b"
+                    android:hint="Введите h"
                     android:inputType="number"
                     android:textColorHint="#993399" />
             </LinearLayout>
@@ -406,7 +387,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/operationField5"
+                    android:id="@+id/operationField_geo5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Ответ"
@@ -431,7 +412,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="Plus3"
+                    android:onClick="PRL"
                     android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
@@ -446,14 +427,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Куб суммы:"
+                android:text="Площадь трапеции:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="(a + b)^3 = a^3 + 3 * a^2 * b + 3 * a * b^2 + b^3"
+                android:text="S = (( a + b ) / 2) * h"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
@@ -462,7 +443,7 @@
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
                 <EditText
-                    android:id="@+id/numberField11"
+                    android:id="@+id/numberField_geo6"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -470,7 +451,7 @@
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
                 <EditText
-                    android:id="@+id/numberField12"
+                    android:id="@+id/numberField_geo6_2"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -479,10 +460,23 @@
                     android:textColorHint="#993399" />
             </LinearLayout>
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+                <EditText
+                    android:id="@+id/numberField_geo6_3"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите h"
+                    android:inputType="number"
+                    android:textColorHint="#993399" />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/operationField6"
+                    android:id="@+id/operationField_geo6"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Ответ"
@@ -507,7 +501,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="ThreePlus"
+                    android:onClick="TRAP"
                     android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
@@ -522,14 +516,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Куб разности:"
+                android:text=" Площадь ромба:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="(a - b)^3 = a^3 - 3 * a^2 * b + 3 * a * b^2 - b^3"
+                android:text=" S = a * h"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
@@ -539,7 +533,7 @@
                 android:background="#ffffff">
 
                 <EditText
-                    android:id="@+id/numberField14"
+                    android:id="@+id/numberField1_geo7"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -566,10 +560,10 @@
                     android:textColor="#3f3f3f"
                     android:textSize="18sp"/>
             </LinearLayout>
-        <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-            android:padding="5dp">
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/Del7"
@@ -588,5 +582,5 @@
                     android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

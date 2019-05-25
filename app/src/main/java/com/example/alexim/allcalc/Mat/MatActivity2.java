@@ -1,22 +1,122 @@
 package com.example.alexim.allcalc.Mat;
 
 
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.alexim.allcalc.DialogFragment.Form2DialogFragment;
+import com.example.alexim.allcalc.DialogFragment.Form3DialogFragment;
+import com.example.alexim.allcalc.DialogFragment.FormDialogFragment;
 import com.example.alexim.allcalc.R;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+
 public class MatActivity2 extends AppCompatActivity {
+    String[] Names = {"Достижения"};
+    //private Button mCrowsCounterButton;
+    //private int mCount = 0;
+    private final static String FILENAME = "sample.txt"; // имя файла
+    private EditText mEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mat2);
+      //  mCrowsCounterButton = findViewById(R.id.Del);
+       //EditText mInfoTextView = findViewById(R.id.editText);
+      // mCrowsCounterButton.setOnClickListener(v ->
+        //{
+          //  mInfoTextView.setText("Вы набрали " + ++mCount + " кликов");
+        //});
+        mEditText = (EditText) findViewById(R.id.editText);
 
+        ListView listView= (ListView)findViewById(R.id.ListView2);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, Names);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
+                        Form3DialogFragment fragment3 = Form3DialogFragment.newInstance();
+                        fragment3.show(ft3, "form_dialog");
+                        break;
+                }
+            }
+        });
+    }
+
+    public void onclick(View v) {
+        switch (v.getId()) {
+                case R.id.action_open:
+                    openFile(FILENAME);
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Open!", Toast.LENGTH_SHORT);
+                    toast.show();
+                    break;
+                case R.id.action_save:
+                    saveFile(FILENAME);
+                    Toast toast2 = Toast.makeText(getApplicationContext(),
+                            "Save!", Toast.LENGTH_SHORT);
+                    toast2.show();
+                    break;
+
+        }
+    }
+    // Метод для открытия файла
+    private void openFile(String fileName) {
+        try {
+            InputStream inputStream = openFileInput(fileName);
+
+            if (inputStream != null) {
+                InputStreamReader isr = new InputStreamReader(inputStream);
+                BufferedReader reader = new BufferedReader(isr);
+                String line;
+                StringBuilder builder = new StringBuilder();
+
+                while ((line = reader.readLine()) != null) {
+                    builder.append(line + "\n");
+                }
+
+                inputStream.close();
+                mEditText.setText(builder.toString());
+            }
+        } catch (Throwable t) {
+            Toast.makeText(getApplicationContext(),
+                    "Exception: " + t.toString(), Toast.LENGTH_LONG).show();
+        }
+    }
+
+    // Метод для сохранения файла
+    private void saveFile(String fileName) {
+        try {
+            OutputStream outputStream = openFileOutput(fileName, 0);
+            OutputStreamWriter osw = new OutputStreamWriter(outputStream);
+            osw.write(mEditText.getText().toString());
+            osw.close();
+        } catch (Throwable t) {
+            Toast.makeText(getApplicationContext(),
+                    "Exception: " + t.toString(), Toast.LENGTH_LONG).show();
+        }
     }
     public void Minus(View view) {
         Button Del =(Button)findViewById(R.id.Del2);

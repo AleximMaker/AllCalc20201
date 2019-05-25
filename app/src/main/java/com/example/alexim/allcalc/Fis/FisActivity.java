@@ -1,4 +1,4 @@
-package com.example.alexim.allcalc;
+package com.example.alexim.allcalc.Fis;
 
 
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.alexim.allcalc.R;
 
 import static java.lang.Math.sqrt;
 
