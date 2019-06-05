@@ -533,7 +533,7 @@
                 android:background="#ffffff">
 
                 <EditText
-                    android:id="@+id/numberField1_geo7"
+                    android:id="@+id/numberField_geo7"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -541,11 +541,11 @@
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399" />
                 <EditText
-                    android:id="@+id/numberField15"
+                    android:id="@+id/numberField_geo7_2"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите b"
+                    android:hint="Введите h"
                     android:inputType="number"
                     android:textColorHint="#993399" />
             </LinearLayout>
@@ -553,7 +553,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/operationField7"
+                    android:id="@+id/operationField_geo7"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Ответ"
@@ -578,7 +578,81 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="ThreeMinus"
+                    android:onClick="ROM"
+                    android:textColor="#000"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Площадь круга:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="S = π * r^2"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/numberField_geo8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите r"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField_geo8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <Button
+                    android:id="@+id/Del8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Del8"
+                    android:text="C"
+                    android:textColor="#000"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="KR"
+                    android:text="="
                     android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>

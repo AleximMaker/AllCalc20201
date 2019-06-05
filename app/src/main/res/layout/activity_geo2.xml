@@ -1,0 +1,332 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:scrollbars="none"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Формулы расчета объема"
+                android:textColor="#993399"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Объем куба:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="S = H^3"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/numberField_ob1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите H"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField_ob1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <Button
+                    android:id="@+id/Del1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Del"
+                    android:text="C"
+                    android:textColor="#000"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="OBK"
+                    android:text="="
+                    android:textColor="#000"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Объем пирамиды:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="V = ( S * h ) / 3"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/numberField_ob2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите S"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
+                <EditText
+                    android:id="@+id/numberField_ob2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите h"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField_ob2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/Del2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Del2"
+                    android:text="C"
+                    android:textColor="#000"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="OBP"
+                    android:text="="
+                    android:textColor="#000"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Объем конуса:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="V = ( h / 3 ) * S"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+                <EditText
+                    android:id="@+id/numberField_ob3"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите h"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
+                <EditText
+                    android:id="@+id/numberField_ob3_2"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите S"
+                    android:inputType="number"
+                    android:textColorHint="#993399"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField_ob3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/Del3"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="Del3"
+                    android:textColor="#000"/>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:onClick="OBKO"
+                    android:textColor="#000"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="бъем цилиндра:"
+                android:textColor="#3f3f3f"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="V = S * h"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+                <EditText
+                    android:id="@+id/numberField_ob4"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите S"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
+                <EditText
+                    android:id="@+id/numberField_ob4_2"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите h"
+                    android:inputType="number"
+                    android:textColorHint="#993399"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField_ob4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <Button
+                    android:id="@+id/Del4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="Del4"
+                    android:textColor="#000"/>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:onClick="OBC"
+                    android:textColor="#000"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

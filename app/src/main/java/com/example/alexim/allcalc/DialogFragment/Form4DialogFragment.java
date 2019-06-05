@@ -14,6 +14,8 @@ import android.widget.Button;
 import com.example.alexim.allcalc.Fis.Fis2;
 import com.example.alexim.allcalc.Fis.Fis3;
 import com.example.alexim.allcalc.Geo.GeoActivity;
+import com.example.alexim.allcalc.Geo.GeoActivity2;
+import com.example.alexim.allcalc.Geo.GeoActivity3;
 import com.example.alexim.allcalc.R;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
@@ -49,11 +51,11 @@ public class Form4DialogFragment extends DialogFragment {
                 startActivity(intent);
             }
         });
-        Button Fis2_2 = (Button) view.findViewById(R.id.Geo2);
-        Fis2_2.setOnClickListener(new View.OnClickListener() {
+        Button Geo2 = (Button) view.findViewById(R.id.Geo2);
+        Geo2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Fis2.class);
+                Intent intent = new Intent(getActivity(), GeoActivity2.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +63,7 @@ public class Form4DialogFragment extends DialogFragment {
         Fis3_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Fis3.class);
+                Intent intent = new Intent(getActivity(), GeoActivity3.class);
                 startActivity(intent);
             }
         });

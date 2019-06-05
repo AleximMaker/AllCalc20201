@@ -17,6 +17,8 @@
         <activity android:name=".Mat.MatActivity4" />
         <activity android:name=".Fis.FisActivity" />
         <activity android:name=".Geo.GeoActivity" />
+        <activity android:name=".Geo.GeoActivity2" />
+        <activity android:name=".Geo.GeoActivity3" />
         <activity android:name=".TwoMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

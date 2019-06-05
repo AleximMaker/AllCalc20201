@@ -11,43 +11,19 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg"
-        android:orientation="vertical">
-
-
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="top|left"
-            android:inputType="textMultiLine" />
-
-        <Button
-            android:id="@+id/action_save"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Save"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/action_open"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="Open"
-            android:text="Button" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Формулы сокращенного умножения"
-            android:textColor="#993399"
-            android:textSize="18sp"
-            android:padding="10dp"/>
-    </LinearLayout>
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Формулы периметра "
+                android:textColor="#993399"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -60,78 +36,71 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Квадрат суммы:"
+                android:text="Периметр круга:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="( a + b )^2 = a^2 + 2*a*b + b^2"
+                android:text="P = 2 * π * R"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
 
-        <EditText
-            android:id="@+id/numberField1"
-            android:layout_width="177dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Введите а"
-            android:inputType="numberSigned|numberDecimal"
-            android:textColorHint="#993399" />
-        <EditText
-            android:id="@+id/numberField2"
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Введите b"
-            android:inputType="number"
-            android:textColorHint="#993399" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
-    </LinearLayout>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/operationField1"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Ответ"
-        android:textColor="#3f3f3f"
-        android:textSize="18sp"/>
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp">
-        <Button
-            android:id="@+id/Del"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="Del"
-            android:text="C"
-            android:textColor="#000"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="Plus"
-            android:text="="
-            android:textColor="#000"/>
-    </LinearLayout>
-</LinearLayout>
+                <EditText
+                    android:id="@+id/numberField_pr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите R"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField_pr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <Button
+                    android:id="@+id/Del1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Del"
+                    android:text="C"
+                    android:textColor="#000"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="PRK"
+                    android:text="="
+                    android:textColor="#000"/>
+            </LinearLayout>
+        </LinearLayout>
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,49 +109,64 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Квадрат разности:"
+                android:text="Периметр треугольника:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="( a - b )^2 = a^2 - 2*a*b + b^2"
+                android:text="P = a + b + c"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff">
+                android:background="#ffffff"
+                android:orientation="horizontal">
                 <EditText
-                    android:id="@+id/numberField3"
-                    android:layout_width="177dp"
+                    android:id="@+id/numberField_pr2_2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите а"
+                    android:hint="Введите a"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399"  />
                 <EditText
-                    android:id="@+id/numberField4"
-                    android:layout_width="195dp"
+                    android:id="@+id/numberField_pr2_3"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Введите b"
-                    android:inputType="number"
+                    android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399"  />
             </LinearLayout>
             <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-            <TextView
-                android:id="@+id/operationField2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/numberField_pr2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Введите c"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Ответ"
-                android:textColor="#3f3f3f"
-                android:textSize="18sp"/>
-        </LinearLayout>
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/operationField_pr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ответ"
+                    android:textColor="#3f3f3f"
+                    android:textSize="18sp"/>
+            </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
@@ -202,7 +186,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="Minus"
+                    android:onClick="PRT"
                     android:text="="
                     android:textColor="#000"/>
             </LinearLayout>
@@ -218,14 +202,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Разность квадратов:"
+                android:text="Периметр прямоугольника:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="a^2 - b^2 = ( a + b ) * ( a - b )"
+                android:text="P = 2 * ( a + b )"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
@@ -234,15 +218,15 @@
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
                 <EditText
-                    android:id="@+id/numberField5"
+                    android:id="@+id/numberField_pr3"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите а"
+                    android:hint="Введите a"
                     android:inputType="numberSigned|numberDecimal"
                     android:textColorHint="#993399"  />
                 <EditText
-                    android:id="@+id/numberField6"
+                    android:id="@+id/numberField_pr3_2"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -254,7 +238,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/operationField3"
+                    android:id="@+id/operationField_pr3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Ответ"
@@ -279,7 +263,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="MinusD"
+                    android:onClick="PRP"
                     android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
@@ -294,14 +278,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Разность кубов:"
+                android:text="Периметр квадрата:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="a^3 - b^3 = ( a - b ) * ( a^2 + a*b + b^2 )"
+                android:text="P = 4 * a"
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
@@ -310,27 +294,19 @@
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
                 <EditText
-                    android:id="@+id/numberField7"
+                    android:id="@+id/numberField_pr4"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите а"
+                    android:hint="Введите a"
                     android:inputType="numberSigned|numberDecimal"
-                    android:textColorHint="#993399"  />
-                <EditText
-                    android:id="@+id/numberField8"
-                    android:layout_width="195dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Введите b"
-                    android:inputType="number"
                     android:textColorHint="#993399"  />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/operationField4"
+                    android:id="@+id/operationField_pr4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Ответ"
@@ -354,7 +330,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="Minus3"
+                    android:onClick="PRKV"
                     android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
@@ -369,43 +345,64 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Сумма кубов:"
+                android:text="Периметр трапеции:"
                 android:textColor="#3f3f3f"
                 android:textSize="18sp"
                 android:padding="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="a^3 + b^3 = ( a + b ) * ( a^2 - a*b + b^2 )"
+                android:text="P = a + b + c + d "
                 android:textColor="#3f3f3f"
                 android:textSize="14sp"
                 android:padding="5dp"/>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+            <EditText
+                android:id="@+id/numberField_pr5"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Введите a"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColorHint="#993399"  />
+            <EditText
+                android:id="@+id/numberField_pr5_2"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Введите b"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColorHint="#993399"  />
+        </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff">
                 <EditText
-                    android:id="@+id/numberField9"
+                    android:id="@+id/numberField_pr5_3"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите а"
+                    android:hint="Введите c"
                     android:inputType="numberSigned|numberDecimal"
-                    android:textColorHint="#993399" />
+                    android:textColorHint="#993399"  />
                 <EditText
-                    android:id="@+id/numberField10"
-                    android:layout_width="195dp"
+                    android:id="@+id/numberField_pr5_4"
+                    android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Введите b"
-                    android:inputType="number"
-                    android:textColorHint="#993399" />
+                    android:hint="Введите d"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColorHint="#993399"  />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/operationField5"
+                    android:id="@+id/operationField_pr5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Ответ"
@@ -416,176 +413,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp">
-
                 <Button
                     android:id="@+id/Del5"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="C"
-                    android:onClick="Del5"
+                    android:onClick="Del4"
                     android:textColor="#000"/>
                 <Button
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="="
-                    android:onClick="Plus3"
+                    android:onClick="PRTR"
                     android:textColor="#000"/>
             </LinearLayout>
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Куб суммы:"
-                android:textColor="#3f3f3f"
-                android:textSize="18sp"
-                android:padding="5dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="(a + b)^3 = a^3 + 3 * a^2 * b + 3 * a * b^2 + b^3"
-                android:textColor="#3f3f3f"
-                android:textSize="14sp"
-                android:padding="5dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ffffff">
-                <EditText
-                    android:id="@+id/numberField11"
-                    android:layout_width="177dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Введите а"
-                    android:inputType="numberSigned|numberDecimal"
-                    android:textColorHint="#993399" />
-                <EditText
-                    android:id="@+id/numberField12"
-                    android:layout_width="195dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Введите b"
-                    android:inputType="number"
-                    android:textColorHint="#993399" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/operationField6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Ответ"
-                    android:textColor="#3f3f3f"
-                    android:textSize="18sp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp">
-
-                <Button
-                    android:id="@+id/Del6"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="C"
-                    android:onClick="Del6"
-                    android:textColor="#000"/>
-                <Button
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:onClick="ThreePlus"
-                    android:textColor="#000"/>
-            </LinearLayout>
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Куб разности:"
-                android:textColor="#3f3f3f"
-                android:textSize="18sp"
-                android:padding="5dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="(a - b)^3 = a^3 - 3 * a^2 * b + 3 * a * b^2 - b^3"
-                android:textColor="#3f3f3f"
-                android:textSize="14sp"
-                android:padding="5dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ffffff">
-
-                <EditText
-                    android:id="@+id/numberField14"
-                    android:layout_width="177dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Введите а"
-                    android:inputType="numberSigned|numberDecimal"
-                    android:textColorHint="#993399" />
-                <EditText
-                    android:id="@+id/numberField15"
-                    android:layout_width="195dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Введите b"
-                    android:inputType="number"
-                    android:textColorHint="#993399" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/operationField7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Ответ"
-                    android:textColor="#3f3f3f"
-                    android:textSize="18sp"/>
-            </LinearLayout>
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-            android:padding="5dp">
-
-                <Button
-                    android:id="@+id/Del7"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="C"
-                    android:onClick="Del7"
-                    android:textColor="#000"/>
-                <Button
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:onClick="ThreeMinus"
-                    android:textColor="#000"/>
-            </LinearLayout>
-        </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

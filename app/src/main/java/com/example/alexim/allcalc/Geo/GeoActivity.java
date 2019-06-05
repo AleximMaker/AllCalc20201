@@ -106,6 +106,31 @@ public class GeoActivity extends AppCompatActivity {
                 "Введите числа!", Toast.LENGTH_SHORT);
             toast.show();}
     }
+    public void ROM(View view) {
+        TextView operationField4 = (TextView) findViewById(R.id.operationField_geo7);
+        EditText numberField7 = (EditText) findViewById(R.id.numberField_geo7);
+        EditText numberField8 = (EditText) findViewById(R.id.numberField_geo7_2);
+        if (!numberField7.getText().toString().equals("") && !numberField8.getText().toString().equals("")
+                && !numberField7.getText().toString().equals(".") && !numberField8.getText().toString().equals(".")) {
+            double one = Double.parseDouble(numberField7.getText().toString());
+            double two = Double.parseDouble(numberField8.getText().toString());
+            double resR =one*two ;
+            operationField4.setText(Double.toString(resR));
+        } else {Toast toast = Toast.makeText(getApplicationContext(),
+                "Введите числа!", Toast.LENGTH_SHORT);
+            toast.show();}
+    }
+    public void KR(View view) {
+        TextView operationField4 = (TextView) findViewById(R.id.operationField_geo8);
+        EditText numberField7 = (EditText) findViewById(R.id.numberField_geo8);
+        if (!numberField7.getText().toString().equals("") && !numberField7.getText().toString().equals(".")) {
+            double one = Double.parseDouble(numberField7.getText().toString());
+            double resR =(one*one)* 3.1415 ;
+            operationField4.setText(Double.toString(resR));
+        } else {Toast toast = Toast.makeText(getApplicationContext(),
+                "Введите числа!", Toast.LENGTH_SHORT);
+            toast.show();}
+    }
     public void Del(View v){
         Button Del =(Button)findViewById(R.id.Del_geo);
         TextView operationField1 = (TextView) findViewById(R.id.operationField_geo1);
@@ -159,5 +184,21 @@ public class GeoActivity extends AppCompatActivity {
         numberField1.setText("");
         numberField2.setText("");
         numberField3.setText("");
+    }
+    public void Del7(View v){
+        Button Del =(Button)findViewById(R.id.Del7);
+        TextView operationField1 = (TextView) findViewById(R.id.operationField_geo7);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField_geo7);
+        EditText numberField2 = (EditText) findViewById(R.id.numberField_geo7_2);
+        operationField1.setText("Ответ");
+        numberField1.setText("");
+        numberField2.setText("");
+    }
+    public void Del8(View v){
+        Button Del =(Button)findViewById(R.id.Del8);
+        TextView operationField1 = (TextView) findViewById(R.id.operationField_geo8);
+        EditText numberField1 = (EditText) findViewById(R.id.numberField_geo8);
+        operationField1.setText("Ответ");
+        numberField1.setText("");
     }
 }

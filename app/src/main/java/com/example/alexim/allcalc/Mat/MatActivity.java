@@ -108,11 +108,8 @@ public class MatActivity extends AppCompatActivity {
                 case "-":
                     operand -= number;
                     break;
-
-
             }
         }
-
         resultField.setText(operand.toString().replace('.', ','));
         numberField.setText("");
     }

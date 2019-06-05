@@ -30,60 +30,34 @@ import java.io.OutputStreamWriter;
 
 public class MatActivity2 extends AppCompatActivity {
     String[] Names = {"Достижения"};
-    //private Button mCrowsCounterButton;
-    //private int mCount = 0;
-    private final static String FILENAME = "sample.txt"; // имя файла
-    private EditText mEditText;
-
+    private Button mCrowsCounterButton;
+    private int mCount = 0;
+    String fileName = "sample.txt"; // имя файла
+    public EditText mEditText;
+    Button SaveBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mat2);
-      //  mCrowsCounterButton = findViewById(R.id.Del);
-       //EditText mInfoTextView = findViewById(R.id.editText);
-      // mCrowsCounterButton.setOnClickListener(v ->
-        //{
-          //  mInfoTextView.setText("Вы набрали " + ++mCount + " кликов");
-        //});
-        mEditText = (EditText) findViewById(R.id.editText);
-
-        ListView listView= (ListView)findViewById(R.id.ListView2);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, Names);
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
-                        Form3DialogFragment fragment3 = Form3DialogFragment.newInstance();
-                        fragment3.show(ft3, "form_dialog");
-                        break;
-                }
-            }
+        mCrowsCounterButton = findViewById(R.id.Del);
+       EditText mInfoTextView = findViewById(R.id.editText);
+       mCrowsCounterButton.setOnClickListener(v ->
+        {
+            mInfoTextView.setText("Вы набрали " + ++mCount + " кликов");
         });
+        mEditText = (EditText) findViewById(R.id.editText);
+        SaveBtn = (Button) findViewById(R.id.action_save);
+        View.OnClickListener SaveBtn = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Save(fileName);
+            }
+        };
+        SaveBtn.setOnClickListener()
     }
 
-    public void onclick(View v) {
-        switch (v.getId()) {
-                case R.id.action_open:
-                    openFile(FILENAME);
-                    Toast toast = Toast.makeText(getApplicationContext(),
-                            "Open!", Toast.LENGTH_SHORT);
-                    toast.show();
-                    break;
-                case R.id.action_save:
-                    saveFile(FILENAME);
-                    Toast toast2 = Toast.makeText(getApplicationContext(),
-                            "Save!", Toast.LENGTH_SHORT);
-                    toast2.show();
-                    break;
-
-        }
-    }
     // Метод для открытия файла
-    private void openFile(String fileName) {
+    public void Open(String fileName) {
         try {
             InputStream inputStream = openFileInput(fileName);
 
@@ -107,7 +81,7 @@ public class MatActivity2 extends AppCompatActivity {
     }
 
     // Метод для сохранения файла
-    private void saveFile(String fileName) {
+    public void Save(String fileName) {
         try {
             OutputStream outputStream = openFileOutput(fileName, 0);
             OutputStreamWriter osw = new OutputStreamWriter(outputStream);
